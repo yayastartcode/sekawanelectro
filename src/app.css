@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans', ui-sans-serif, system-ui, sans-serif;
+  color: #10212a;
+  background: #eef7f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; }
+a, button { -webkit-tap-highlight-color: transparent; }
+::selection { background: #19a7ce; color: #ffffff; }
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(.9); opacity: .72; }
+  80%, 100% { transform: scale(1.35); opacity: 0; }
+}
+
+.reveal-up { animation: reveal-up 720ms ease both; }
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: inherit;
+  background: rgba(37, 211, 102, .35);
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(16, 33, 42, .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 33, 42, .06) 1px, transparent 1px),
+    radial-gradient(circle at 18% 20%, rgba(25, 167, 206, .18), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(255, 184, 77, .2), transparent 24%),
+    radial-gradient(circle at 70% 80%, rgba(20, 184, 166, .18), transparent 26%);
+  background-size: 42px 42px, 42px 42px, auto, auto, auto;
+}
