@@ -177,10 +177,10 @@
         <div>
           <p class="text-sm font-black uppercase tracking-[.24em] text-[#d58412]">Foto pengerjaan</p>
           <h2 class="mt-3 text-4xl font-black tracking-[-.04em] md:text-6xl">Dokumentasi kerja teknisi.</h2>
-          <p class="mt-5 text-lg leading-8 text-[#6b5b45]">Lihat contoh pengerjaan cuci AC dan service kulkas. Kirim foto/video keluhan unit via WhatsApp supaya teknisi bisa bantu estimasi lebih cepat.</p>
+          <p class="mt-5 text-lg leading-8 text-[#6b5b45]">Lihat contoh pengerjaan cuci AC, service kulkas, dan service mesin cuci. Kirim foto/video keluhan unit via WhatsApp supaya teknisi bisa bantu estimasi lebih cepat.</p>
           <a href={waLink} class="mt-8 inline-flex rounded-full bg-[#10212a] px-7 py-4 font-black text-white shadow-lg transition hover:-translate-y-1">Booking Teknisi</a>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <article class="group relative overflow-hidden rounded-[2.5rem] border-[10px] border-white bg-white shadow-2xl">
             <img
               src="/work/cuci-ac-pressure-wash.jpg"
@@ -193,7 +193,7 @@
               <p class="mt-1 text-base font-black">Pembersihan coil, filter, dan jalur buangan.</p>
             </div>
           </article>
-          <article class="group relative overflow-hidden rounded-[2.5rem] border-[10px] border-white bg-white shadow-2xl sm:mt-10">
+          <article class="group relative overflow-hidden rounded-[2.5rem] border-[10px] border-white bg-white shadow-2xl sm:mt-10 lg:mt-0">
             <img
               src="/work/service-kulkas-repair.jpg"
               alt="Teknisi SekawanElectro memperbaiki bagian belakang kulkas"
@@ -203,6 +203,18 @@
             <div class="absolute inset-x-4 bottom-4 rounded-[1.5rem] bg-[#10212a]/86 p-4 text-white shadow-xl backdrop-blur">
               <p class="text-xs font-black uppercase tracking-[.18em] text-[#7ee7ff]">Service Kulkas</p>
               <p class="mt-1 text-base font-black">Pengecekan kompresor, kabel, dan komponen belakang unit.</p>
+            </div>
+          </article>
+          <article class="group relative overflow-hidden rounded-[2.5rem] border-[10px] border-white bg-white shadow-2xl sm:col-span-2 lg:col-span-1 lg:mt-10">
+            <img
+              src="/work/service-mesin-cuci-repair.jpg"
+              alt="Teknisi SekawanElectro memeriksa mesin cuci front loading"
+              class="aspect-[4/5] h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-x-4 bottom-4 rounded-[1.5rem] bg-[#10212a]/86 p-4 text-white shadow-xl backdrop-blur">
+              <p class="text-xs font-black uppercase tracking-[.18em] text-[#7ee7ff]">Service Mesin Cuci</p>
+              <p class="mt-1 text-base font-black">Pengecekan drum, pintu, dan komponen mesin cuci.</p>
             </div>
           </article>
         </div>
