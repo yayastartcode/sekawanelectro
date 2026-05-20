@@ -172,19 +172,25 @@
   </section>
 
   <section class="px-5 pb-20 md:px-8">
-    <div class="mx-auto max-w-7xl rounded-[3rem] bg-[#fff7e8] p-8 shadow-sm md:p-12">
-      <div class="grid gap-8 md:grid-cols-[1fr_1fr] md:items-center">
+    <div class="mx-auto max-w-7xl rounded-[3rem] bg-[#fff7e8] p-6 shadow-sm md:p-12">
+      <div class="grid gap-8 md:grid-cols-[.9fr_1.1fr] md:items-center">
         <div>
           <p class="text-sm font-black uppercase tracking-[.24em] text-[#d58412]">Foto pengerjaan</p>
-          <h2 class="mt-3 text-4xl font-black tracking-[-.04em] md:text-6xl">Galeri bisa ditambah nanti.</h2>
-          <p class="mt-5 text-lg leading-8 text-[#6b5b45]">Kalau ada foto teknisi, unit AC, kulkas, mesin cuci, atau before-after, tinggal kirim. Bagian ini siap diganti dengan dokumentasi asli.</p>
+          <h2 class="mt-3 text-4xl font-black tracking-[-.04em] md:text-6xl">Cuci AC langsung sampai bersih.</h2>
+          <p class="mt-5 text-lg leading-8 text-[#6b5b45]">Dokumentasi pengerjaan asli: coil AC dibersihkan memakai spray/pressure washer supaya debu dan kotoran yang menempel bisa turun maksimal.</p>
+          <a href={waLink} class="mt-8 inline-flex rounded-full bg-[#10212a] px-7 py-4 font-black text-white shadow-lg transition hover:-translate-y-1">Booking Cuci AC</a>
         </div>
-        <div class="grid grid-cols-2 gap-3">
-          {#each ['Cuci AC', 'Service kulkas', 'Mesin cuci', 'Elektronik'] as item}
-            <div class="aspect-square rounded-[2rem] bg-[linear-gradient(135deg,#e9fbff,#ffffff_50%,#ffe7ba)] p-4 shadow-inner">
-              <div class="flex h-full items-end rounded-[1.5rem] border border-[#10212a]/10 p-4 text-lg font-black text-[#10212a]">{item}</div>
-            </div>
-          {/each}
+        <div class="relative overflow-hidden rounded-[2.5rem] border-[10px] border-white bg-white shadow-2xl">
+          <img
+            src="/work/cuci-ac-pressure-wash.jpg"
+            alt="Teknisi SekawanElectro membersihkan coil AC dengan spray air"
+            class="aspect-[4/3] h-full w-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute inset-x-4 bottom-4 rounded-[1.5rem] bg-[#10212a]/86 p-4 text-white shadow-xl backdrop-blur">
+            <p class="text-xs font-black uppercase tracking-[.18em] text-[#7ee7ff]">Cuci AC</p>
+            <p class="mt-1 text-lg font-black">Pembersihan coil, filter, dan jalur buangan.</p>
+          </div>
         </div>
       </div>
     </div>
